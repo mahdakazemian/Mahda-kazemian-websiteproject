@@ -11,7 +11,7 @@
     <body>
 
 
-    <form class="form" action="bouncer.php">
+    <form class="form" action="POST">
 
     <label  for="fullname"> Fullname :</label>
     <input class="box" id="fullname" type="text" name="fullname"><br><br>
@@ -56,9 +56,11 @@
     <input class="box" id="postalcode" type="text" name="postalcode"><br><br><br>
 
 
-    <input type="submit"/><br>
+    <input id="submit" type="submit"/>
+    <input id="reset" type="reset"/>
     </form>
-
+   
+    <script src="script.js"> </script>
     </body>
 </html>
 
