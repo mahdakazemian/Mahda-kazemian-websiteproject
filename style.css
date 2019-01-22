@@ -1,0 +1,227 @@
+body{
+    
+    background:url(C:/xampp/htdocs/project/images/back.jpg) no-repeat center center fixed ;
+    background-size: cover;
+
+   
+}
+h1{
+    color:blue;
+    font-family:"Arial" ,sans-serif;
+    font-style: italic; 
+    text-align:center;
+}
+
+h2{
+    color:blue;
+    font-family:"Arial" ,sans-serif;
+    font-style: italic;
+    padding-left: 10px;   
+}
+
+
+/* index */
+img{
+    border-radius:20px; 
+    max-width: 100%; 
+}
+
+.images{
+    border-width:2px;
+    border-color:#191970;
+    border-style:ridge;  
+}
+
+#footer {
+    color:#8E44AD ;  
+
+}
+
+
+/* contact*/
+p{
+    font-family:"times new roman",sans-serif;
+    font-size:25px;
+    color:#34495E;
+    padding-left: 10px;  
+}
+
+ol{
+    font-family:"times new roman",sans-serif;
+    font-size:25px;
+    font-weight:bold; 
+    color:#4B0082; 
+     
+}
+
+ul{
+    font-family:"calibri",sans-serif;
+    font-size:20px;
+    color:#008080;   
+}
+
+a:link{
+    color:blue;
+}
+
+a:hover,a:focus {
+color:green;
+}
+
+a:active{
+    color:purple ;
+}
+
+/*register*/
+
+form{
+    font-family:"Calibri",sans-serif;
+    font-size:20px;
+    color:#800000;
+    padding-left: 10px;
+    padding-top: 20px;
+   
+}
+
+.box{
+    background-color:#EBF5FB;
+    font-family:"times new roman",sans-serif;
+    color:#34495E;
+    border-width:2px;
+    border-color:#191970;
+    border-style:groove;
+
+}
+/*responsive*/
+
+div.container{
+    width:100%;
+}
+.logo{
+    float:left;
+    width:100%;
+    padding-left:10px;
+    padding-top:10px;
+   
+}
+.navigation{
+    float: right;
+    width: 100%;
+    font-family: "Arial" ,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:#7B241C;
+    background-color: #E6B0AA;
+    text-align:right;
+    padding-right: 10px;
+  
+
+}
+.side{
+    float: right;
+    width: 15%;
+    font-family: "Arial" ,sans-serif;
+    font-size: 20px;
+    color: #800000;
+    font-weight: bold;
+    background-color: #F9E79F;
+    margin-top: 20px;
+    
+}
+.maindetails{
+    
+    width: 85%;
+    float:left;
+    padding-left:10px;
+    margin-top: 20px;
+}
+
+.sectiondetails{
+    
+    width: 85%;
+    float:left;
+    padding-left:10px;
+    
+}
+#footer{
+    width:100%;
+    float:left;
+    padding-left:10px;
+}
+
+
+/*ipad responsive*/
+@media only screen and (max-width:768px){
+
+.side{
+    padding-right: 100px;
+    
+}
+/*
+img {
+    max-width:22%
+}
+*/
+
+
+/*cell phone responsive*/
+}
+@media only screen and (max-width:450px){
+
+
+.logo{
+        height: 100px;
+        width:100px; 
+    }
+.logo h1{
+    font-size: 15px; 
+    
+    }
+
+.navigation{
+  
+    font-size: 15px;
+
+      
+}
+.side{
+    font-size: 15px; 
+    width: 40%;
+    margin-top: 50px;
+    
+}
+
+.maindetails{
+    
+    width: 60%;
+    margin-top: 50px;
+    
+}
+.maindetails img{
+    max-width:80%
+}
+
+
+.sectiondetails img{
+    max-width:35%
+}
+
+
+p{
+    
+    font-size:20px;
+    
+}
+
+ol{
+   
+    font-size:20px;
+   
+  
+}
+
+ul{
+    font-size:15px;
+     
+}
+}
