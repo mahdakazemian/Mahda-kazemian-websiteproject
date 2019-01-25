@@ -2,9 +2,8 @@ body{
     
     background:url(C:/xampp/htdocs/project/images/back.jpg) no-repeat center center fixed ;
     background-size: cover;
-
-   
 }
+
 h1{
     color:blue;
     font-family:"Arial" ,sans-serif;
@@ -34,7 +33,6 @@ img{
 
 #footer {
     color:#8E44AD ;  
-
 }
 
 
@@ -50,8 +48,7 @@ ol{
     font-family:"times new roman",sans-serif;
     font-size:25px;
     font-weight:bold; 
-    color:#4B0082; 
-     
+    color:#4B0082;     
 }
 
 ul{
@@ -90,8 +87,9 @@ form{
     border-width:2px;
     border-color:#191970;
     border-style:groove;
-
+    font-size:20px;
 }
+
 /*responsive*/
 
 div.container{
@@ -104,6 +102,7 @@ div.container{
     padding-top:10px;
    
 }
+
 .navigation{
     float: right;
     width: 100%;
@@ -114,9 +113,8 @@ div.container{
     background-color: #E6B0AA;
     text-align:right;
     padding-right: 10px;
-  
-
 }
+
 .side{
     float: right;
     width: 15%;
@@ -125,9 +123,9 @@ div.container{
     color: #800000;
     font-weight: bold;
     background-color: #F9E79F;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
 }
+
 .maindetails{
     
     width: 85%;
@@ -140,9 +138,9 @@ div.container{
     
     width: 85%;
     float:left;
-    padding-left:10px;
-    
+    padding-left:10px; 
 }
+
 #footer{
     width:100%;
     float:left;
@@ -172,18 +170,21 @@ img {
 .logo{
         height: 100px;
         width:100px; 
-    }
+}
+
+
 .logo h1{
     font-size: 15px; 
     
-    }
+ }
+
 
 .navigation{
   
-    font-size: 15px;
-
-      
+    font-size: 15px;    
 }
+
+
 .side{
     font-size: 15px; 
     width: 40%;
@@ -197,6 +198,7 @@ img {
     margin-top: 50px;
     
 }
+
 .maindetails img{
     max-width:80%
 }
@@ -215,8 +217,7 @@ p{
 
 ol{
    
-    font-size:20px;
-   
+    font-size:20px; 
   
 }
 
@@ -224,4 +225,12 @@ ul{
     font-size:15px;
      
 }
+}
+
+/* form   */
+
+.bregister p{
+font-size:15px;
+
+
 }
