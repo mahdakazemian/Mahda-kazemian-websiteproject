@@ -227,10 +227,15 @@ ul{
 }
 }
 
-/* form   */
+/* form paraghraphs   */
 
-.bregister p{
+.form p{
 font-size:15px;
 
+}
 
+/* error messages*/
+.error{
+font-size:20px;
+color: red;
 }

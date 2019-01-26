@@ -15,27 +15,27 @@
         <form class="form" action="" name="form1">
 
             <label  for="fullname"> Fullname :</label>
-            <input class="box" id="fullname" type="text" name="fullname" required > 
+            <input class="box" id="fullname" type="text" name="fullname" > 
             <p id="focusname" style="display:none;">Please enter your fullname.</p>
             <br><br>
 
             <label for="username">Username (Your email) :</label>
-            <input class="box" id="username" type="text" name="usernam" required >
+            <input class="box" id="username" type="text" name="usernam" >
             <p id="focususername" style="display:none;">Please enter a valid email address .</p>
             <br><br>
 
             <label for="password">Password:</label>
-            <input class="box" id="password" type="password" name="password" required minlength="5" >
+            <input class="box" id="password" type="password" name="password"  >
             <p id="focuspassword" style="display:none;"> Password must be atleast 5 character .</p>
             <br><br>
 
             <label for="phonenumber">Phone number :</label>
-            <input class="box" id="phonenumber" type="text" name="phonenumber" required>
+            <input class="box" id="phonenumber" type="text" name="phonenumber" >
             <p id="focusphone" style="display:none;"> It can be your cell or home phone.</p>
             <br><br>
 
             <label for="address"> Address :</label>
-            <textarea class="box" id="address" name="address" required></textarea>
+            <textarea class="box" id="address" name="address" ></textarea>
             <p id="focusaddress" style="display:none;">Please enter your complete address.</p>
             <br><br>
             <!--
@@ -46,12 +46,12 @@
             <input type="radio" name="direction" value="SE"/>SE<br><br>
              -->   
             <label for="city">City :</label>
-            <input class="box" id="city" type="text" name="city" required>
+            <input class="box" id="city" type="text" name="city" >
             <p id="focuscity" style="display:none;">Please enter the name of your city.</p>
             <br><br>
 
             <label for="province">Province :</label>
-            <input class="box" id="province" type="text" name="province" required > 
+            <input class="box" id="province" type="text" name="province" > 
             <p id="focusprovince" style="display:none;">Please enter your province.</p>
             <br><br>
 
@@ -73,15 +73,26 @@
              -->
 
             <label for="postalcode">Postal code:</label>
-            <input class="box" id="postalcode" type="text" name="postalcode" required>
-            <p id="focuscode" style="display:none;">Please enter your postal code.</p>
+            <input class="box" id="postalcode" type="text" name="postalcode" >
+            <p id="focuscode" style="display:none;">Please enter the correct way.</p>
             <br><br><br>
 
-            <input id="submit" type="submit" name="submit"/>
-            <input id="reset" type="reset" name="reset"/>
+
+            <button name="submitBut" id="submitbtn" type="submit"value="Submit">Submit</button>
+            <button name="resetBut" id="resetbtn" type="reset" value="reset">reset</button>
             
         </form>
    
+            <p id="errorname" class="error" style="display:none;"> Fullname is required to be filled!</p>
+            <p id="erroruser" class="error" style="display:none;"> Username is required to be filled!</p>
+            <p id="errorpass" class="error" style="display:none;"> Password is required to be filled!</p>
+            <p id="errorphone" class="error" style="display:none;"> Phone number is required to be filled!</p>
+            <p id="erroraddress" class="error" style="display:none;"> Address is required to be filled!</p>
+            <p id="errorcity" class="error" style="display:none;"> City is required to be filled!</p>
+            <p id="errorpro" class="error" style="display:none;"> Province is required to be filled!</p>
+            <p id="errorpost" class="error" style="display:none;">Postal code field is required to be filled!</p>
+            <p id="correctpcode" class="error" style="display:none;">Postal code should be like this pattern"A1B 2C3".</p>
+
         <script src="script.js"> </script>
     </body>
 </html>
