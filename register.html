@@ -12,7 +12,7 @@
     <body id="bodyregister" class="bregister">
 
 
-        <form class="form" action="" name="form1">
+        <form class="form" action="" name="form1" >
 
             <label  for="fullname"> Fullname :</label>
             <input class="box" id="fullname" type="text" name="fullname" > 
@@ -38,28 +38,25 @@
             <textarea class="box" id="address" name="address" ></textarea>
             <p id="focusaddress" style="display:none;">Please enter your complete address.</p>
             <br><br>
-          <!--
-            <label for="direction"> Direction :</label><br><br>
-            <input type="radio" name="direction" value="NW"/>NW
-            <input type="radio" name="direction" value="NE"/>NE
-            <input type="radio" name="direction" value="SW"/>SW
-            <input type="radio" name="direction" value="SE"/>SE<br><br>
-             -->
+          
+            <label for="direction"> Direction :</label>
+            <input type="radio"  id="direction" name="direction" value="NW"/>NW
+            <input type="radio"  id="direction" name="direction" value="NE"/>NE
+            <input type="radio"  id="direction" name="direction" value="SW"/>SW
+            <input type="radio"  id="direction" name="direction" value="SE"/>SE
+            <p id="focusdirection" style="display:none;">Please indicate your area direction.</p>
+            <br><br>
+             
             
             <label for="city">City :</label>
             <input class="box" id="city" type="text" name="city" >
             <p id="focuscity" style="display:none;">Please enter the name of your city.</p>
             <br><br>
-
-            <label for="province">Province :</label>
-            <input class="box" id="province" type="text" name="province" > 
-            <p id="focusprovince" style="display:none;">Please enter the name of your province.</p>
-            <br><br>
-
-            <!--
+            
+           
             <label for="province">Province :</label>
             <select class="box" id="province" name="provincename" >
-                    <option valu="selectanoption">Select an option</option>
+                    <option value="0">Select an option</option>
                     <option value="ab">AB</option>
                     <option value="bc">BC</option>
                     <option value="mb">MB</option>
@@ -73,7 +70,7 @@
             </select>
             <p id="focusprovince" style="display:none;">Please enter your province.</p>
             <br><br>
-             -->
+             
 
             <label for="postalcode">Postal code:</label>
             <input class="box" id="postalcode" type="text" name="postalcode" >
@@ -96,6 +93,8 @@
             <p id="errorpro" class="error" style="display:none;"> Province is required to be filled!</p>
             <p id="errorpost" class="error" style="display:none;">Postal code field is required to be filled!</p>
             <p id="correctpcode" class="error" style="display:none;">Postal code should be like this pattern"A1B 2C3".</p>
+            <p id="correctemail" class="error" style="display:none;">Email should be a valid email address "user@company.com".</p>
+            <p id="correctpass" class="error" style="display:none;">Password should be atleast 5 characters.</p>
 
         <script src="script.js"> </script>
     </body>

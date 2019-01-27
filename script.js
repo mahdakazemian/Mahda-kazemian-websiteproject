@@ -49,6 +49,14 @@ Address.addEventListener('focusout', function() {
 focusaddress.style.display = 'none';  
 });
 
+var Direction=document.getElementById("direction");
+Direction.addEventListener("focus",function(){
+focusdirection.style.display = "block";
+});
+Direction.addEventListener('focusout', function() {
+focusdirection.style.display = 'none';  
+});
+
 var City=document.getElementById("city");
 City.addEventListener("focus",function(){
 focuscity.style.display = "block";
@@ -98,11 +106,13 @@ submitButton.addEventListener("click", function(event) {////start of click funct
     errorPass.style.display = "none";
     errorPhone.style.display = "none";
     errorAddress.style.display = "none";
-    //errordirection.style.display = "none";
+    errordirection.style.display = "none";
     errorCity.style.display = "none";
     errorPro.style.display = "none";
-    errorpost.style.display= "none";
+    errorPost.style.display= "none";
     correctpcode.style.display = "none";
+    correctemail.style.display = "none";
+    correctpass.style.display = "none";
 
     var name = document.form1.fullname.value;
     var user = document.form1.username.value;
@@ -126,6 +136,14 @@ submitButton.addEventListener("click", function(event) {////start of click funct
         errorUser.style.display="block";
         return false;
     }
+    ////////email format validation
+    if (/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(user)) {
+    }else{
+       event.preventDefault();
+       correctemail.style.display ="block";
+       return false;
+    }
+
    
     if (!pass){
 
@@ -133,6 +151,12 @@ submitButton.addEventListener("click", function(event) {////start of click funct
         errorPass.style.display="block";
         return false;
     }
+    if( pass.length<5){      /////password format validation
+        event.preventDefault();
+        correctpass.style.display="block";
+        return false;
+    }
+
    
     if (!phone){
 
@@ -148,13 +172,13 @@ submitButton.addEventListener("click", function(event) {////start of click funct
         return false;
     }
    
-    /*var radios=document.getElementsByName("direction");
-    if ( ! (radio[0].checked || radio[1].checked || radio[2].checked || radio[3].checked)){
+    var radios = document.getElementsByName("direction");  //// direction validation
+    if (!(radios[0].checked || radios[1].checked || radios[2].checked || radios[3].checked)){
         event.preventDefault();
         errordirection.style.display="block";
-     return false;
+        return false;
     }
-    */
+
 
     if (!city){
 
@@ -162,9 +186,9 @@ submitButton.addEventListener("click", function(event) {////start of click funct
         errorCity.style.display="block";
         return false;
     }
-   
-    if (!pro){
 
+    var select = document.getElementById("province");  //// province validation
+    if (select.value==0){
         event.preventDefault();
         errorPro.style.display="block";
         return false;
@@ -176,7 +200,7 @@ submitButton.addEventListener("click", function(event) {////start of click funct
      errorpost.style.display="block";
      return false;
    }
-    if (/^[A-Z]\d[A-Z] ?\d[A-Z]\d$/.test(post)) {
+    if (/^[A-Z]\d[A-Z] ?\d[A-Z]\d$/.test(post)) {  //////postal code format validation
          }else{
         event.preventDefault();
         correctpcode.style.display ="block";
@@ -216,8 +240,6 @@ submitButton.addEventListener("click", function(event) {////start of click funct
 
 
 
-
-
 //////////index page//////////
 
 ////////////adding images,descriptions and urls inside the table
@@ -244,10 +266,10 @@ if (document.getElementById("bodyindex")){
             tempImg.addEventListener("click", function(event){//// link images to the url and open url in the new window
             var new_window=window.open(urlArrey[i]);
 
-            function closenew_window() {/////close new window
+            function closenew_window() {/////close new window after 8 seconds
                 new_window.close();
                 }
-                setTimeout(closenew_window, 6000);
+                setTimeout(closenew_window, 8000);
 
             }); 
 

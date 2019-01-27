@@ -19,7 +19,7 @@ h2{
 }
 
 
-/* index */
+/* index page*/
 img{
     border-radius:20px; 
     max-width: 100%; 
@@ -32,28 +32,29 @@ img{
 }
 
 #footer {
-    color:#8E44AD ;  
+    color:#8E44AD ; 
+    font-size:20px; 
 }
 
 
-/* contact*/
+/* contact page*/
 p{
     font-family:"times new roman",sans-serif;
-    font-size:25px;
+    font-size:22px;
     color:#34495E;
-    padding-left: 10px;  
+    padding-left: 20px;  
 }
 
 ol{
     font-family:"times new roman",sans-serif;
-    font-size:25px;
+    font-size:20px;
     font-weight:bold; 
     color:#4B0082;     
 }
 
 ul{
     font-family:"calibri",sans-serif;
-    font-size:20px;
+    font-size:18px;
     color:#008080;   
 }
 
@@ -69,7 +70,7 @@ a:active{
     color:purple ;
 }
 
-/*register*/
+/*register page*/
 
 form{
     font-family:"Calibri",sans-serif;
@@ -90,7 +91,7 @@ form{
     font-size:20px;
 }
 
-/*responsive*/
+/*responsive full screen*/
 
 div.container{
     width:100%;
@@ -120,8 +121,8 @@ div.container{
     width: 15%;
     font-family: "Arial" ,sans-serif;
     font-size: 20px;
-    color: #800000;
     font-weight: bold;
+    color: #800000;
     background-color: #F9E79F;
     margin-top: 20px; 
 }
