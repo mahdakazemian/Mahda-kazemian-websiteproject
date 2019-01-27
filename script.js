@@ -99,7 +99,7 @@ var errorPost = document.getElementById("errorpost");
 
 
 
-submitButton.addEventListener("click", function(event) {////start of click function for validation & submit
+submitButton.addEventListener("click", function(event) {////start of click function for validation form & submit
 
     errorName.style.display = "none";
     errorUser.style.display = "none";
@@ -273,18 +273,17 @@ if (document.getElementById("bodyindex")){
 
             }); 
 
-            var newTableData=document.createElement("td");//// inserting date to the row
+            var newTableData=document.createElement("td");//// inserting first data(images) to the row
             newTableData.appendChild(tempImg);
             newTableRow.appendChild(newTableData);
 
             
-            var description=document.createElement("p");
+            var description=document.createElement("p");//// adding discrption
             var tempText=document.createTextNode(descriptionArrey[i]);
             description.appendChild(tempText);
 
-            newTableData=document.createElement("td");/// insrting next data in the row(creating second column)
+            newTableData=document.createElement("td");/// inserting next data(description) in the row(creating second column)
             newTableData.appendChild(description);
-
             newTableRow.appendChild(newTableData);
             newTable.appendChild(newTableRow);
     
@@ -292,7 +291,7 @@ if (document.getElementById("bodyindex")){
  
 };
 
-    var mainDetails=document.getElementsByClassName("maindetails")[0];///// inserting our table in the indexpage's body.
+    var mainDetails=document.getElementsByClassName("maindetails")[0];/// inserting our table in the indexpage's body in the specific place.
     mainDetails.appendChild(newTable);
 
     

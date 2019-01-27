@@ -228,14 +228,14 @@ ul{
 }
 }
 
-/* form paraghraphs   */
+/* form description paraghraphs   */
 
 .form p{
 font-size:15px;
 
 }
 
-/* error messages*/
+/* error messages for validation*/
 .error{
 font-size:20px;
 color: red;
