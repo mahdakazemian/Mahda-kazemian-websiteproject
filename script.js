@@ -1,7 +1,7 @@
 
 /////////register page////////
          
-///////////////////focus function////////////////////////
+///////////////////focus function for fields of the form////////////////////////
 
 
 if (document.getElementById("bodyregister")){
@@ -76,7 +76,7 @@ focuscode.style.display = 'none';
 
 
 
-/////////////////Error messages///////////////////////
+////////////////////Error messages for validation the form/////////////////////////////
 
 
 var submitButton = document.getElementById("submitbtn");
@@ -91,13 +91,14 @@ var errorPost = document.getElementById("errorpost");
 
 
 
-submitButton.addEventListener("click", function(event) {
+submitButton.addEventListener("click", function(event) {////start of click function for validation & submit
 
     errorName.style.display = "none";
     errorUser.style.display = "none";
     errorPass.style.display = "none";
     errorPhone.style.display = "none";
     errorAddress.style.display = "none";
+    //errordirection.style.display = "none";
     errorCity.style.display = "none";
     errorPro.style.display = "none";
     errorpost.style.display= "none";
@@ -147,6 +148,14 @@ submitButton.addEventListener("click", function(event) {
         return false;
     }
    
+    /*var radios=document.getElementsByName("direction");
+    if ( ! (radio[0].checked || radio[1].checked || radio[2].checked || radio[3].checked)){
+        event.preventDefault();
+        errordirection.style.display="block";
+     return false;
+    }
+    */
+
     if (!city){
 
         event.preventDefault();
@@ -161,6 +170,7 @@ submitButton.addEventListener("click", function(event) {
         return false;
     }
 
+
    if (!post){
      event.preventDefault();
      errorpost.style.display="block";
@@ -172,13 +182,9 @@ submitButton.addEventListener("click", function(event) {
         correctpcode.style.display ="block";
         return false;
     }
-
     
-        
-   
-
     
-////////// submit confirmation
+///////////////////////submit confirmation
     event.preventDefault ();    
     var submitConfirm = confirm("Are you sure that you want to submit the form?");
     if (submitConfirm){
@@ -188,7 +194,7 @@ submitButton.addEventListener("click", function(event) {
    
   });////end of click function for validation & submit
 
-/////////// reset confirmation
+//////////////////////// reset confirmation
 
     var resetbutton = document.getElementById("resetbtn");
     resetbutton.addEventListener("click", function (event) {
@@ -205,7 +211,7 @@ submitButton.addEventListener("click", function(event) {
 
 
 
-}///////// end of bodyregister
+}///////////////////////// end of bodyregister
 
 
 
@@ -214,59 +220,61 @@ submitButton.addEventListener("click", function(event) {
 
 //////////index page//////////
 
-///adding images and description inside the table
+////////////adding images,descriptions and urls inside the table
 
 if (document.getElementById("bodyindex")){
 
-    var urlArrey=[ "https://en.parisinfo.com/","https://www.lonelyplanet.com/italy/venice",
-                     "https://wikitravel.org/en/Tehran","https://wikitravel.org/en/Moscow"]
+    var urlArrey=[ "https://www.lonelyplanet.com/france/paris","https://www.lonelyplanet.com/italy/venice",
+                    "https://www.lonelyplanet.com/iran/tehran","https://www.lonelyplanet.com/russia/moscow"];
 
 
-
-
-    var immageArrey=["C://xampp/htdocs/mahda-project/images/pic8.jpg",
-                     "C://xampp/htdocs/mahda-project/images/pic9.jpg",
-                     "C://xampp/htdocs/mahda-project/images/pic10.jpg",
-                     "C://xampp/htdocs/mahda-project/images/pic11.jpg"];
+    var immageArrey=["images/paris.jpg","images/venice.jpg","images/tehran.jpg","images/moscow.jpg"];
 
     var descriptionArrey=["Paris","Venice","Tehran","Moscow"];
 
-    var newTable=document.createElement("table");
+    var newTable=document.createElement("table");////// creat our table
 
-    for (i=0; i<immageArrey.length;i++ ){
+    for (let i=0; i<immageArrey.length;i++ ){
+        
 
-    var newTableRow=document.createElement("tr");
-    var newImg=document.createElement("img");
-    newImg.src=immageArrey[i];
+            var newTableRow=document.createElement("tr");////// creat table row
+            var tempImg=document.createElement("img");
+            tempImg.src=immageArrey[i];
 
-    var newTableData1=document.createElement("td");
-    newTableData1.appendChild(newImg);
-    newTableRow.appendChild(newTableData1);
+            tempImg.addEventListener("click", function(event){//// link images to the url and open url in the new window
+            var new_window=window.open(urlArrey[i]);
 
-    var newCap=document.createElement("p");
-    var capText=document.createTextNode(descriptionArrey[i]);
-    newCap.appendChild(capText);
+            function closenew_window() {/////close new window
+                new_window.close();
+                }
+                setTimeout(closenew_window, 6000);
 
-    var newTableData2=document.createElement("td");
-    newTableData2.appendChild(newCap);
+            }); 
 
-    newTableRow.appendChild(newTableData2);
-    newTable.appendChild(newTableRow);
+            var newTableData=document.createElement("td");//// inserting date to the row
+            newTableData.appendChild(tempImg);
+            newTableRow.appendChild(newTableData);
 
-    };
-    console.log(newTable);
-    var mainDetails=document.getElementsByClassName("maindetails")[0];
+            
+            var description=document.createElement("p");
+            var tempText=document.createTextNode(descriptionArrey[i]);
+            description.appendChild(tempText);
+
+            newTableData=document.createElement("td");/// insrting next data in the row(creating second column)
+            newTableData.appendChild(description);
+
+            newTableRow.appendChild(newTableData);
+            newTable.appendChild(newTableRow);
+    
+            
+ 
+};
+
+    var mainDetails=document.getElementsByClassName("maindetails")[0];///// inserting our table in the indexpage's body.
     mainDetails.appendChild(newTable);
 
     
 
-/*
-   var my_window=window.open(urlArrey[i]);
-   newImg.appendChild(my_window);
-   my_window.close();
 
 
-*/
-
-
-}
+}///////////////////////// end of bodyindex 

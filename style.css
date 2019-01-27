@@ -1,6 +1,6 @@
 body{
     
-    background:url(C:/xampp/htdocs/project/images/back.jpg) no-repeat center center fixed ;
+    background:url(images/back.jpg) no-repeat center center fixed ;
     background-size: cover;
 }
 
@@ -238,4 +238,5 @@ font-size:15px;
 .error{
 font-size:20px;
 color: red;
+
 }
