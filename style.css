@@ -232,6 +232,14 @@ ul{
 
 .form p{
 font-size:15px;
+text-align: center;
+background-color: rgb(241, 190, 185);
+border: #4B0082 solid 2px;
+margin-right:45%;
+float: right;
+width: 20%;
+margin-top: 3px;
+
 
 }
 
