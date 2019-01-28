@@ -246,8 +246,8 @@ submitButton.addEventListener("click", function(event) {////start of click funct
 
 if (document.getElementById("bodyindex")){
 
-    var urlArrey=[ "https://www.lonelyplanet.com/france/paris","https://www.lonelyplanet.com/italy/venice",
-                    "https://www.lonelyplanet.com/iran/tehran","https://www.lonelyplanet.com/russia/moscow"];
+    var urlArrey=[ "https://wikitravel.org/en/Paris","https://wikitravel.org/en/Venice",
+                   "https://wikitravel.org/en/Tehran","https://wikitravel.org/en/Moscow"];
 
 
     var immageArrey=["images/paris.jpg","images/venice.jpg","images/tehran.jpg","images/moscow.jpg"];
@@ -269,7 +269,7 @@ if (document.getElementById("bodyindex")){
             function closenew_window() {/////close new window after 8 seconds
                 new_window.close();
                 }
-                setTimeout(closenew_window, 8000);
+                setTimeout(closenew_window, 6000);
 
             }); 
 

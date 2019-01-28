@@ -11,9 +11,11 @@
 
     <body id="bodyregister" class="bregister">
 
-        <!-- creat form with its fields and description paragraphs for focus functions-->
-        <form class="form" action="" name="form1" >
+        <!-- creat form with fields and description paragraphs for focus functions-->
+        <!-- after setting action attribute to bouncer.php, when the form submitted it opens
+        the php codes not the report of the form.that's why I removed the action attribute. -->
 
+        <form class="form"  action="" name="form1" >
             <label  for="fullname"> Fullname :</label>
             <input class="box" id="fullname" type="text" name="fullname" > 
             <p id="focusname" style="display:none;">Please enter your fullname.</p>
