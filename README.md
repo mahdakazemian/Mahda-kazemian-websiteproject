@@ -1,40 +1,18 @@
-# TravelExpert-Web Application
-- ASP.NET Framework
-- Microsoft Visual Studio
-- Microsoft SQL Server
-- Bootstrap
+Course name: Web Application Development
 
-## Team Members
-- [Haley](https://github.com/hmeh)
-- [Mahda](https://github.com/mahdakazemian)
-- [Tim](https://github.com/tdleslie17)
-- [Dao](https://github.com/daoyzheng)
+Date:January 26 , 2019
 
-## Overview
-This application allows a customer to set up an account with Travel Experts by entering their name, address, city, province, email address, phone number, and fax number. 
+Hello
+My name is Mahda Kazemian. I'm the the OOSD program student at SAIT.
+This is my final assignment regarding design a web page useing
+html, css,and java script. In this project there are lots of html commands 
+in order to creat a web page with some paragraphs,pictures,and form,the 
+commands to style them in css ,and finaly various java script functions to do 
+specefic things in our website such as ( creating a table,click and focus functions,
+eventprevent,submit,reset, addlistener,settimeout,and etc). I belive it can be a good 
+example for begginer students who want to start to design a website. At the end, I would 
+like to thank to my kind,patient, and wonderful instructor Heather Tovey who guided me 
+during my project and I learned many things from her during my course.
 
-Form data is sent to an ASP.NET page that will verify the data and either re-display the form with appropriate error messages, or create a customer record.  
-
-The database stores the customer’s user-id and password which will enable them to log in later.
-
-### Index 
-
-<img src="screenshots/index.png" alt="index">
-
-### Customer Sign in
-
-Customer Sign in page allows registered customer to login to the Travel Experts Web site.
-
-<img src="screenshots/login.png" alt="login">
-
-### Customer Sign up
-
-Customer Sign up page allows guest customers to register an account with Travel Experts.
-
-<img src="screenshots/signup.png" alt="signup">
-
-### Customer Orders
-
-Customer Orders page lists purchased products and packages of the customer. These products and packages are stored in the database and are dynamically retrieved for a logged in customer.
-
-<img src="screenshots/customerOrders.png" alt="customerOrders">
+Course Module : CPRG-210-OSD.
+“Final Assignment”.
